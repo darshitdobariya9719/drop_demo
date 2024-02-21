@@ -163,7 +163,7 @@ app.get("/download", async (req, res) => {
       }
 
       const uploadParams = {
-        Bucket: process.env.AWS_BUCKET_NAME,
+        Bucket: "testcontentupload",
         Key: filename,
         Body: fileContent,
         ContentType: contentType,
