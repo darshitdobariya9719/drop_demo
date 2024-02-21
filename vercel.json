@@ -1,7 +1,7 @@
 {
     "functions": {
       "api/download.js": {
-        "runtime": "nodejs14.x"
+        "runtime": "nodejs16.x"
       }
     }
   }
