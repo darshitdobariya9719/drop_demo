@@ -28,7 +28,7 @@ app.get("/download", async (req, res) => {
     // Get filename from URL
     const rawFilename = path.basename(dropboxUrl);
     const filename = rawFilename.split("?")[0];
-    const filePath = path.join(__dirname, "downloads", filename); // Save in a 'downloads' directory
+    const filePath = path.join(__dirname, "public", filename); // Save in a 'downloads' directory
 
     // Download file from modified Dropbox URL
     const response = await axios({
