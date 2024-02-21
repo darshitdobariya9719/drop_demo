@@ -1,15 +1,8 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src":"./index.js",
-            "use":"@vercel/node"
-        }
-    ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"/"
-        }
-    ]
-}
+    "functions": {
+      "api/download.js": {
+        "runtime": "nodejs14.x"
+      }
+    }
+  }
+  
