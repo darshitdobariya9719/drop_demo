@@ -8,8 +8,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 // Configure AWS SDK
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAZSPCVP6DHTC74S5Y",
-  secretAccessKey: "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",
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
 });
 // Define route for downloading PNG file from modified Dropbox URL and storing it locally
 // app.get("/download", async (req, res) => {
